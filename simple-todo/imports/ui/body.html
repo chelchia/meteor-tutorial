@@ -1,12 +1,19 @@
 <body>
 	<div class="container">
 		<header>
-			<h1> "To do list" </h1>
-			
+			<h1> "To do list" {{countUnchecked}}</h1>
+
+			<!-- checkbox to hide completed tasks -->
+			<label class="hide-completed">
+				<input type="checkbox" />
+				Hide completed tasks
+			</label>
+
 			<!-- Add a form-->
 			<form class="new-task">
 				<input type="text" name="text" placeholder="Type here to add tasks">
 			</form>
+
 		</header>
 
 
@@ -20,6 +27,3 @@
 	</div>
 </body>
 
-<template name="task">
-	<li>{{text}}</li>
-</template>
